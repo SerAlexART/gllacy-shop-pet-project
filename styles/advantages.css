@@ -1,0 +1,26 @@
+/* Advantages */
+.advantages {
+  padding: 24px;
+
+  background-image: url("../images/background/pattern-waffle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+/* Advantages Inner */
+.advantages-inner {
+  padding: 56px 40px;
+
+  background-color: var(--main);
+  border-radius: 16px;
+}
+
+/* Advantages Title */
+.advantages-title {
+  margin: 0;
+  margin-bottom: 55px;
+
+  text-align: center;
+  color: var(--main-extra-dark);
+}

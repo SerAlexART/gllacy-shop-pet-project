@@ -1,0 +1,26 @@
+/* Footer Social */
+
+/* Footer Info */
+.footer-info {
+  color: var(--main-extra-dark);
+}
+
+.footer-info-link {
+  text-decoration: none;
+  color: var(--main-extra-dark);
+}
+
+/* Footer Copyright */
+.footer-copyright {
+  color: var(--main-extra-dark);
+}
+
+.footer-copyright-link {
+  margin-bottom: 14px;
+
+  color: var(--main-extra-dark);
+}
+
+.footer-copyright-text {
+  margin: 0;
+}

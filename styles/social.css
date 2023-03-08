@@ -1,0 +1,19 @@
+/* Social */
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 28px;
+  height: 28px;
+
+  background-color: var(--secondary-light-01);
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social-link path {
+  fill: var(--main-extra-light);
+}

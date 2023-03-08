@@ -1,0 +1,25 @@
+/* Subscribe */
+.subscribe {
+  padding: 6px;
+
+  background-color: var(--secondary-extra-bright);
+  background-image: url("../images/background/subscribe-01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.subscribe-inner {
+  padding: 26px;
+
+  border-radius: 16px;
+  background-color: var(--main);
+}
+
+.subscribe-text {
+  margin: 0;
+}
+
+.subscribe-text:not(:last-child) {
+  margin-bottom: 42px;
+}

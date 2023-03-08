@@ -1,0 +1,20 @@
+/* Form */
+.input-main {
+  padding: 14px 16px;
+
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--main-dark);
+
+  background-color: var(--main);
+  border: none;
+  outline: 1px solid var(--main-neutral);
+  border-radius: 4px;
+}
+
+.input-main::placeholder {
+  color: var(--main-neutral);
+}

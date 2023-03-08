@@ -1,0 +1,75 @@
+/* Catalog */
+.catalog {
+  color: var(--main-extra-dark);
+}
+
+.catalog-title {
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+  text-align: center;
+  color: var(--main-extra-dark);
+}
+
+.catalog-title:not(:last-child) {
+  margin-bottom: 56px;
+}
+
+/* Catalog List */
+.catalog-list {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  list-style: none;
+}
+
+.catalog-item {
+  width: 270px;
+  min-height: 330px;
+  padding-top: 70px;
+}
+
+.catalog-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.catalog-item-inner {
+  position: relative;
+  min-height: 280px;
+  height: 100%;
+  padding: 130px 40px 24px;
+
+  background-color: var(--main);
+  border-radius: 8px;
+}
+
+.catalog-item-link {
+  margin-bottom: 8px;
+
+  text-decoration: none;
+  color: var(--main-extra-dark);
+}
+
+.catalog-item-name {
+  margin: 0;
+}
+
+.catalog-item-image {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 168px;
+  height: 168px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.catalog-item-text {
+  margin: 0;
+  margin-bottom: 16px;
+}

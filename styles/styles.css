@@ -26,16 +26,20 @@
 /* Colors */
 :root {
   --main-extra-dark: #2d3440;
+  --main-extra-dark-01: rgba(45, 52, 64, 0.12);
   --main-dark: #565c66;
   --main-neutral: #b9b9b9;
   --main: #ffffff;
   --main-light: #e7e7e7;
-  --main-extra-light: ##fcfcfc;
+  --main-extra-light: #fcfcfc;
+  --main-extra-light-01: rgba(252, 252, 252, 0.4);
 
   --secondary-extra-bright: #ff2f64;
   --secondary-bright: #ff4a78;
   --secondary-neutral: #ff7799;
   --secondary-light: #feafc3;
+  --secondary-light-01: #f9ccd7;
+  --secondary-light-02: #f7baca;
   --secondary-extra-light: #ffcbd8;
   --secondary-acent-light: #69a9ff;
   --secondary-acent-dark: #fcc850;
@@ -66,7 +70,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #2d3440;
+  color: var(--main-dark);
 
   background-color: var(--secondary-light);
 }
