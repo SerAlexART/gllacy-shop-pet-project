@@ -1,0 +1,48 @@
+/* Deliverys */
+.delivery {
+  padding: 64px;
+
+  background-color: var(--main);
+  background-image: url("../images/background/delivery-01.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-radius: 16px;
+}
+
+.delivery-title {
+  margin: 0;
+
+  color: var(--main-extra-dark);
+}
+
+.delivery-title:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.delivery-text {
+  margin: 0;
+}
+
+.delivery-text:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.delivery-form {
+  padding: 40px;
+
+  background-color: var(--main);
+  border-radius: 8px;
+  box-shadow: 0 15px 40px var(--main-extra-dark-01);
+}
+
+.delivery-form-text {
+  margin: 0;
+}
+
+.delivery-form-text:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.delivery-label {
+  color: var(--main-extra-dark);
+}

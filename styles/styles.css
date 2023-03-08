@@ -1,0 +1,125 @@
+/* Fonts */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Colors */
+:root {
+  --main-extra-dark: #2d3440;
+  --main-extra-dark-01: rgba(45, 52, 64, 0.12);
+  --main-dark: #565c66;
+  --main-neutral: #b9b9b9;
+  --main: #ffffff;
+  --main-light: #e7e7e7;
+  --main-extra-light: #fcfcfc;
+  --main-extra-light-01: rgba(252, 252, 252, 0.4);
+
+  --secondary-extra-bright: #ff2f64;
+  --secondary-bright: #ff4a78;
+  --secondary-neutral: #ff7799;
+  --secondary-light: #feafc3;
+  --secondary-light-01: #f9ccd7;
+  --secondary-light-02: #f7baca;
+  --secondary-extra-light: #ffcbd8;
+  --secondary-acent-light: #69a9ff;
+  --secondary-acent-dark: #fcc850;
+
+  --status-error: #ea5454;
+  --status-warning: #fd912e;
+  --status-access: #00e484;
+}
+
+/* Global */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 1200px;
+  min-height: 100%;
+
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--main-dark);
+
+  background-color: var(--secondary-light);
+}
+
+.page-body-slider-1 {
+  background-color: var(--secondary-light);
+}
+
+.page-body-slider-2 {
+  background-color: var(--secondary-acent-light);
+}
+
+.page-body-slider-3 {
+  background-color: var(--secondary-acent-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-container {
+  width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-index {
+  flex: 1;
+}
+
+/* .input {
+  TBD
+} */

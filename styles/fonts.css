@@ -1,0 +1,94 @@
+/* Title */
+.title-huge {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.title-big {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.title-medium {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.title-small {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.title-tiny {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* Text */
+.text-big {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.text-medium {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.text-small {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Text Bold */
+.text-big-bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.text-medium-bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.text-small-bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Sub Text */
+.sub-text-medium {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.sub-text-small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Sub Text Bold */
+.sub-text-medium-bold {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.sub-text-small-bold {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}

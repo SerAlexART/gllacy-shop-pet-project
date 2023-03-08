@@ -1,0 +1,57 @@
+/* Gifts */
+.gifts-title {
+  max-width: 50%;
+
+  margin: 0 auto;
+  margin-bottom: 55px;
+
+  text-align: center;
+  color: var(--main-extra-dark);
+}
+
+/* Gift Article */
+.gifts-card {
+  min-height: 268px;
+  padding: 36px;
+  padding-right: 200px;
+
+  color: var(--main-extra-dark);
+
+  border-radius: 16px;
+  background-color: var(--secondary-neutral);
+  background-repeat: no-repeat;
+  background-position: top 26px right 20px;
+  background-size: 219px auto;
+}
+
+.gifts-card-raspberries {
+  background-image: url("../images/background/gift-raspberries.png");
+}
+
+.gifts-card-marshmallow {
+  background-image: url("../images/background/gift-marshmallow.png");
+  background-position: top 26px right -20px;
+}
+
+/* Gift Title */
+.gifts-card-title {
+  margin: 0;
+}
+
+.gifts-card-title:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+/* Gift Text */
+.gits-card-text {
+  margin: 0;
+}
+
+.gifts-card-text:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+/* Gift Button */
+.gift-card-link {
+  display: block;
+}

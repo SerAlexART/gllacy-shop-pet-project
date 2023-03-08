@@ -1,0 +1,46 @@
+/* Contacts */
+.contacts {
+  padding: 64px;
+
+  background-color: var(--main);
+  background-image: url("../images/background/contacts-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+
+.contacts-inner {
+  padding: 40px;
+
+  background-color: var(--main);
+  border-radius: 8px;
+  box-shadow: 0 15px 40px var(--main-extra-dark-01);
+}
+
+.contacts-title:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-text {
+  margin: 0;
+
+  color: var(--main-extra-dark);
+}
+
+.contacts-text:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.contacts-phone {
+  color: var(--main-extra-dark);
+  text-decoration: none;
+}
+
+.contacts-time {
+  display: block;
+}
