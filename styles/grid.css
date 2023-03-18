@@ -1,0 +1,13 @@
+.grid-two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+  gap: 30px;
+}
+
+.grid-two-advantages-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+  gap: 40px 30px;
+}

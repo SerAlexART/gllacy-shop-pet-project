@@ -13,6 +13,9 @@
 .contacts-inner {
   padding: 40px;
 
+  display: flex;
+  flex-direction: column;
+
   background-color: var(--main);
   border-radius: 8px;
   box-shadow: 0 15px 40px var(--main-extra-dark-01);
@@ -43,4 +46,9 @@
 
 .contacts-time {
   display: block;
+}
+
+.contacts-button {
+  align-self: flex-start;
+  margin-top: auto;
 }

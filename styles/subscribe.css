@@ -23,3 +23,7 @@
 .subscribe-text:not(:last-child) {
   margin-bottom: 42px;
 }
+
+.subscribe-form {
+  display: flex;
+}
