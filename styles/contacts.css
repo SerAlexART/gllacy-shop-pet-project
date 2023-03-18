@@ -1,5 +1,7 @@
 /* Contacts */
 .contacts {
+  display: flex;
+
   padding: 64px;
 
   background-color: var(--main);
@@ -11,10 +13,11 @@
 }
 
 .contacts-inner {
-  padding: 40px;
-
   display: flex;
   flex-direction: column;
+
+  padding: 40px;
+  max-width: 350px;
 
   background-color: var(--main);
   border-radius: 8px;

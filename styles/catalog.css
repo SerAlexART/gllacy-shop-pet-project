@@ -1,5 +1,7 @@
 /* Catalog */
 .catalog {
+  margin-bottom: 80px;
+
   color: var(--main-extra-dark);
 }
 

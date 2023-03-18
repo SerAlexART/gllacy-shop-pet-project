@@ -1,12 +1,26 @@
 /* Deliverys */
 .delivery {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 80px;
   padding: 64px;
 
   background-color: var(--main);
   background-image: url("../images/background/delivery-01.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+
+  background-position: right top -130px;
+
   border-radius: 16px;
+}
+
+.delivery-inner {
+  margin-right: 100px;
+  width: 370px;
+
+  align-self: center;
 }
 
 .delivery-title {
@@ -27,8 +41,15 @@
   margin-bottom: 12px;
 }
 
+/* Delivery Form */
 .delivery-form {
+  display: grid;
+  grid-template-columns: minmax(100px, 120px) 1fr;
+  gap: 20px 16px;
+  align-items: center;
+
   padding: 40px;
+  width: 500px;
 
   background-color: var(--main);
   border-radius: 8px;
@@ -36,6 +57,8 @@
 }
 
 .delivery-form-text {
+  grid-column: 1 / -1;
+
   margin: 0;
 }
 
@@ -43,6 +66,19 @@
   margin-bottom: 32px;
 }
 
+.delivery-form-address {
+  grid-column: 1 / -1;
+}
+
 .delivery-label {
   color: var(--main-extra-dark);
+}
+
+.delivery-button {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.delivery-button:not(:only-child) {
+  margin-top: 32px;
 }

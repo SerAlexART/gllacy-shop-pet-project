@@ -1,4 +1,15 @@
 /* Form */
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+}
+
+.form-group-label {
+  margin-bottom: 8px;
+}
+
 .input-main {
   padding: 14px 16px;
 
