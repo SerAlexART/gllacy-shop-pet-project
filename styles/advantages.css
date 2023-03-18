@@ -24,3 +24,13 @@
   text-align: center;
   color: var(--main-extra-dark);
 }
+
+/* Advantages List */
+.advantages-list {
+  gap: 40px 30px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

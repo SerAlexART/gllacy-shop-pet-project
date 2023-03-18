@@ -3,3 +3,75 @@
   text-decoration: none;
   color: var(--main-extra-dark);
 }
+
+.navigation {
+  padding: 24px 0;
+
+  display: flex;
+}
+
+.navigation-logo-link {
+  width: 137px;
+  margin-right: 16px;
+  align-self: start;
+}
+
+.navigation-logo-image {
+  display: block;
+}
+
+.navigation-list {
+  width: 500px;
+  margin: 0;
+  margin-right: 16px;
+  padding: 0;
+  padding-top: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+
+  list-style: none;
+}
+
+.navigation-link {
+  display: block;
+  height: 100%;
+}
+
+.navigation-user {
+  width: 480px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  padding-top: 12px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: start;
+
+  list-style: none;
+}
+
+.navigation-user-item {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-user-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.button-user-search {
+  padding: 8px;
+}
+
+.button-user-search svg {
+  margin-right: 0;
+}
+
+.navigation-user-number {
+  font-weight: 400;
+}

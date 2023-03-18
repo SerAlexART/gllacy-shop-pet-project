@@ -1,4 +1,21 @@
 /* Social */
+.social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.social-item {
+  margin-bottom: 16px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 16px;
+}
+
 .social-link {
   display: flex;
   justify-content: center;

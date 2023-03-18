@@ -93,7 +93,22 @@
 }
 
 /* Slider Buttons */
+.slider-description-button {
+  display: inline-block;
+}
 
 /* Slider Pagination */
+.slider-pagination-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.slider-pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 /* Slider Social */
