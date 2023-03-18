@@ -1,11 +1,11 @@
 /* Main Footer */
 .main-footer {
-  padding: 20px 0 50px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+
+  padding: 48px 0 50px;
 }
 
 /* Footer Social */
@@ -16,13 +16,19 @@
 
 /* Footer Info */
 .footer-info {
-  min-width: 350px;
+  max-width: 500px;
   margin-right: 20px;
+  padding-left: 24px;
 
   color: var(--main-extra-dark);
 }
 
 .footer-info-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: baseline;
+  gap: 8px 24px;
+
   margin: 0;
   padding: 0;
 
@@ -48,4 +54,8 @@
 
 .footer-copyright-text {
   margin: 0;
+}
+
+.footer-copyright-link-text {
+  color: var(--main-extra-dark);
 }
