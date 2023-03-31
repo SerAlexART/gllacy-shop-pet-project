@@ -58,6 +58,25 @@
 
   text-decoration: none;
   color: var(--main-extra-dark);
+
+  outline: none;
+  border: none;
+
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.catalog-item-link:hover {
+  color: var(--secondary-extra-bright);
+}
+
+.catalog-item-link:focus {
+  color: var(--secondary-extra-bright);
+}
+
+.catalog-item-link:active {
+  color: var(--main-extra-dark);
 }
 
 .catalog-item-name {
@@ -74,6 +93,22 @@
 
   border-radius: 50%;
   object-fit: cover;
+
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.catalog-item-link:hover .catalog-item-image {
+  transform: translateX(-50%) rotate(5deg) scale(1.05);
+}
+
+.catalog-item-link:focus .catalog-item-image {
+  transform: translateX(-50%) scale(1.05);
+}
+
+.catalog-item-link:active .catalog-item-image {
+  transform: translateX(-50%) scale(1.05);
 }
 
 .catalog-item-text {

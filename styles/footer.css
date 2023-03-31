@@ -38,6 +38,53 @@
 .footer-info-link {
   text-decoration: none;
   color: var(--main-extra-dark);
+
+  outline: none;
+  border: none;
+
+  transition-property: color, outline, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.footer-info-link:hover {
+  color: var(--main-extra-light);
+}
+
+.footer-info-link:focus {
+  color: var(--main-extra-light);
+}
+
+.footer-info-link:active {
+  color: var(--main-extra-dark);
+}
+
+.footer-info-link-acent {
+  position: relative;
+}
+
+.footer-info-link-acent::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -24px;
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../images/icon/heart.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.footer-info-link-acent:hover::before,
+.footer-info-link-acent:focus::before,
+.footer-info-link-acent:active::before {
+  transform: scale(0);
 }
 
 /* Footer Copyright */
@@ -50,6 +97,27 @@
   display: inline-block;
 
   color: var(--main-extra-dark);
+
+  outline: none;
+  border: none;
+
+  transition-property: color, outline;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.footer-copyright-link:hover {
+  color: var(--main-extra-light);
+}
+
+.footer-copyright-link:focus {
+  color: var(--main-extra-light);
+}
+
+.footer-copyright-link:active {
+  color: var(--main-extra-dark);
+
+  outline: none;
 }
 
 .footer-copyright-text {
@@ -57,5 +125,26 @@
 }
 
 .footer-copyright-link-text {
+  color: var(--main-extra-dark);
+
+  outline: none;
+  border: none;
+
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.footer-copyright-link-text:hover {
+  color: var(--main-extra-light);
+  text-decoration: none;
+}
+
+.footer-copyright-link-text:focus {
+  color: var(--main-extra-light);
+  text-decoration: none;
+}
+
+.footer-copyright-link-text:active {
   color: var(--main-extra-dark);
 }
