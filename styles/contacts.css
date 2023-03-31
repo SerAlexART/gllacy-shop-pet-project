@@ -45,6 +45,25 @@
 .contacts-phone {
   color: var(--main-extra-dark);
   text-decoration: none;
+
+  outline: none;
+  border: none;
+
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.contacts-phone:hover {
+  color: var(--secondary-extra-bright);
+}
+
+.contacts-phone:focus {
+  color: var(--secondary-extra-bright);
+}
+
+.contacts-phone:active {
+  color: var(--main-extra-dark);
 }
 
 .contacts-time {

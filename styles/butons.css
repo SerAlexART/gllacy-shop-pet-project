@@ -11,12 +11,43 @@
   color: var(--main-extra-dark);
 
   background-color: var(--main-extra-light);
-  outline: none;
-  border: 4px solid var(--secondary-light-01);
+  outline: 4px solid var(--main-extra-light-04);
+  outline-offset: 0;
+  border: none;
 
   border-radius: 26px;
   cursor: pointer;
   box-shadow: 0 4px 12px var(--main-extra-dark-01);
+
+  transition-property: background-color, outline;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--main-extra-light-04);
+  outline-color: var(--main-extra-light);
+}
+
+.button:focus {
+  background-color: var(--main-extra-light-04);
+  outline: 2px solid var(--main-extra-dark);
+}
+
+.button:active {
+  background-color: var(--main-extra-light);
+  outline: 2px solid var(--main-extra-dark);
+}
+
+.button:disabled,
+.button:disabled:hover {
+  font-weight: 400;
+
+  background-color: var(--main-light);
+  outline-color: var(--main-extra-light-04);
+
+  opacity: 0.4;
+  cursor: default;
 }
 
 /* Button Acent */
@@ -32,37 +63,105 @@
   color: var(--main-extra-light);
 
   background-color: var(--secondary-extra-bright);
-  outline: none;
-  border: 4px solid var(--secondary-light-01);
+  outline: 4px solid var(--secondary-extra-bright-03);
+  outline-offset: 0;
+  border: none;
   border-radius: 26px;
   cursor: pointer;
   box-shadow: 0 4px 12px var(--main-extra-dark-02);
+
+  transition-property: background-color, outline, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.button-acent:hover {
+  color: var(--main-extra-dark);
+
+  background-color: var(--main-extra-light);
+  outline-color: var(--secondary-extra-bright);
+}
+
+.button-acent:focus {
+  color: var(--main-extra-light);
+
+  background-color: var(--secondary-extra-bright);
+  outline: 2px solid var(--main-extra-dark);
+}
+
+.button-acent:active {
+  color: var(--main-extra-light);
+
+  background-color: var(--secondary-light);
+  outline: 2px solid var(--main-extra-dark);
+}
+
+.button-acent:disabled,
+.button-acent:disabled:hover {
+  font-weight: 400;
+  color: var(--main-extra-dark);
+
+  background-color: var(--main-neutral);
+  outline-color: var(--main-neutral-03);
+
+  cursor: default;
 }
 
 /* Button Secondary */
 .button-secondary {
-  padding: 12px 32px;
+  padding: 8px 32px;
 
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   text-decoration: none;
   color: var(--main-extra-dark);
 
-  background-color: var(--main-extra-light-01);
-  box-shadow: 0 0 0 4px var(--main-extra-light);
-  outline: none;
+  background-color: var(--main-extra-light-04);
+  outline: 2px solid var(--main-extra-light);
+  outline-offset: 0;
   border: none;
-  border-radius: 26px;
+  border-radius: 20px;
   cursor: pointer;
+
+  transition-property: background-color, outline;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.button-secondary:hover {
+  background-color: var(--main-extra-light);
+  outline-color: var(--main-extra-light-04);
+}
+
+.button-secondary:focus {
+  background-color: var(--main-extra-light-04);
+  outline-color: var(--main-extra-dark);
+}
+
+.button-secondary:active {
+  background-color: var(--main-extra-light-04);
+  outline-color: var(--main-extra-light-04);
+}
+
+.button-secondary:disabled,
+.button-secondary:disabled:hover {
+  background-color: var(--main-extra-light-03);
+  outline-color: var(--main-extra-light);
+
+  opacity: 0.4;
+  cursor: default;
 }
 
 /* Button Header */
 .button-header {
-  padding: 8px 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
 
+  padding: 8px 16px;
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -76,6 +175,59 @@
   border: 2px solid transparent;
   border-radius: 30px;
   cursor: pointer;
+
+  transition-property: background-color, border, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.button-header:hover {
+  background-color: var(--main-extra-light-05);
+}
+
+.button-header:focus {
+  background-color: var(--main-extra-light-05);
+  border-color: var(--main-extra-dark);
+}
+
+.button-header:active {
+  background-color: var(--main-extra-light);
+  border-color: var(--main-extra-light);
+}
+
+.button-header svg {
+  margin-left: 6px;
+}
+
+/* Button Header Menu */
+.button-header-open {
+  color: var(--main-extra-light);
+
+  background-color: var(--secondary-bright);
+}
+
+.button-header-open:hover {
+  background-color: var(--secondary-bright);
+
+  opacity: 0.6;
+}
+
+.button-header-open:focus {
+  background-color: var(--secondary-bright);
+  border-color: var(--main-extra-dark);
+
+  opacity: 1;
+}
+
+.button-header-open:active {
+  background-color: var(--secondary-bright);
+  border-color: var(--secondary-bright);
+
+  opacity: 0.3;
+}
+
+.button-header-open svg {
+  transform: rotate(180deg);
 }
 
 /* Button User */
@@ -92,11 +244,30 @@
   text-decoration: none;
   color: var(--main-extra-dark);
 
-  background-color: var(--main-extra-light-01);
+  background-color: var(--main-extra-light-04);
   outline: none;
   border: 2px solid transparent;
   border-radius: 30px;
   cursor: pointer;
+
+  transition-property: background-color, border, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.button-user:hover {
+  background-color: var(--main-extra-light-05);
+  border-color: transparent;
+}
+
+.button-user:focus {
+  background-color: var(--main-extra-light-05);
+  border-color: var(--main-extra-dark);
+}
+
+.button-user:active {
+  background-color: var(--main-extra-light);
+  border-color: transparent;
 }
 
 .button-user svg {
@@ -105,7 +276,64 @@
 }
 
 .button-user path {
-  fill: var(--main-extra-dark);
+  /* fill: var(--main-extra-dark); */
+}
+
+/* Button User Open */
+.button-user-open {
+  color: var(--main-extra-light);
+  background-color: var(--secondary-bright);
+}
+
+.button-user-open:hover {
+  background-color: var(--secondary-bright);
+  opacity: 0.6;
+}
+
+.button-user-open:focus {
+  background-color: var(--secondary-bright);
+  border-color: var(--main-extra-dark);
+  opacity: 1;
+}
+
+.button-user-open:active {
+  background-color: var(--secondary-bright);
+  border-color: transparent;
+  opacity: 0.3;
+}
+
+/* Button User Phone */
+.button-user-phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: var(--main-extra-dark);
+
+  outline: none;
+  border: none;
+
+  transition-property: color, outline;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.button-user-phone:hover {
+  color: var(--main-extra-light);
+}
+
+.button-user-phone:focus {
+  /* outline: 2px solid var(--main-extra-dark);
+  outline-offset: 6px;
+  border-radius: 20px; */
+
+  color: var(--main-extra-light);
+}
+
+.button-user-phone:active {
+  color: var(--main-extra-dark);
+
+  outline: none;
 }
 
 /* Button Slider Control */
@@ -118,16 +346,46 @@
   height: 38px;
   padding: 8px;
 
-  background-color: var(--main-extra-light-01);
-  box-shadow: 0 0 0 2px var(--main-extra-light);
+  color: var(--main-extra-light);
+
+  background-color: var(--main-extra-light-04);
   outline: none;
-  border: none;
+  border: 2px solid var(--main-extra-light);
   border-radius: 50%;
   cursor: pointer;
+
+  transition-property: background-color, border, opacity, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
-.button-slider-control path {
-  fill: var(--main-extra-light);
+.button-slider-control:hover {
+  color: var(--main-extra-dark);
+
+  background-color: var(--main-extra-light);
+}
+
+.button-slider-control:focus {
+  color: var(--main-extra-dark);
+
+  background-color: var(--main-extra-light-03);
+  border-color: var(--main-extra-dark);
+}
+
+.button-slider-control:active {
+  color: var(--main-extra-dark);
+
+  background-color: var(--main-extra-light-05);
+  border-color: transparent;
+}
+
+.button-slider-control:disabled,
+.button-slider-control:disabled:hover {
+  color: var(--main-extra-light);
+
+  background-color: var(--main-extra-light-04);
+  opacity: 0.4;
+  cursor: default;
 }
 
 /* Button Slider Pagination */
@@ -136,14 +394,35 @@
   height: 12px;
   padding: 0;
 
-  background-color: var(--main-extra-light-01);
+  background-color: var(--main-extra-light-04);
+  outline: none;
   border: 1px solid transparent;
   border-radius: 50%;
   cursor: pointer;
+
+  transition-property: background-color, border;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
+.button-slider-pagination:hover {
+  border-color: var(--main-extra-light);
+}
+
+.button-slider-pagination:focus {
+  background-color: var(--main-extra-light-03);
+  border-color: var(--main-extra-dark);
+}
+
+.button-slider-pagination:active {
+  background-color: var(--main-extra-light-05);
+  border-color: transparent;
+}
+
+/* Button Slider Pagination Active */
 .button-slider-pagination-active {
   background-color: var(--main-extra-light);
+  border-color: transparent;
 }
 
 /* Button Cart */
@@ -156,13 +435,43 @@
   height: 32px;
   padding: 6px;
 
+  color: var(--main-extra-light);
+
   background-color: var(--secondary-extra-bright);
   outline: none;
-  border: 2px solid transparent;
+  border: 2px solid var(--secondary-extra-bright);
   border-radius: 50%;
   cursor: pointer;
+
+  transition-property: background-color, border, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
-.button-cart path {
-  fill: var(--main-extra-light);
+.button-cart:hover {
+  color: var(--main-extra-dark);
+
+  background-color: var(--main-extra-light);
+  border-color: var(--secondary-extra-bright);
+}
+
+.button-cart:focus {
+  border-color: var(--main-extra-dark);
+}
+
+.button-cart:active {
+  color: var(--main-extra-dark);
+
+  background-color: var(--secondary-extra-light);
+  border-color: var(--secondary-extra-bright);
+}
+
+.button-cart:disabled,
+.button-cart:disabled:hover {
+  color: var(--main-dark);
+
+  background-color: var(--main-neutral);
+  border-color: var(--main-neutral);
+
+  cursor: default;
 }

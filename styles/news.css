@@ -28,10 +28,34 @@
 
   text-decoration: none;
   color: var(--main-extra-dark);
+
+  outline: 2px solid transparent;
+  border: none;
+  border-radius: 16px;
+
+  transition-property: outline;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 .news-title {
   margin: 0;
+
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.news-link:hover .news-title {
+  color: var(--secondary-extra-bright);
+}
+
+.news-link:focus .news-title {
+  color: var(--secondary-extra-bright);
+}
+
+.news-link:active .news-title {
+  color: var(--main-extra-dark);
 }
 
 .news-subtitle {

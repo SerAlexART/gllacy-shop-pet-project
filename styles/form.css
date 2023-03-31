@@ -24,6 +24,35 @@
   border: none;
   outline: 1px solid var(--main-neutral);
   border-radius: 4px;
+
+  transition-property: outline;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.input-main:hover {
+  outline-color: var(--main-extra-dark);
+}
+
+.input-main:focus {
+  outline: 2px solid var(--main-extra-dark);
+}
+
+.input-main:invalid {
+  outline-color: var(--status-error);
+}
+
+.input-main:invalid:hover,
+.input-main:invalid:focus {
+  outline: 2px solid var(--status-error);
+}
+
+.input-main:disabled,
+.input-main:disabled:hover {
+  background-color: var(--main-light);
+  outline: 1px solid var(--main-neutral);
+
+  cursor: default;
 }
 
 .input-main::placeholder {

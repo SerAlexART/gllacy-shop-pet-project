@@ -2,7 +2,7 @@
 .gallery {
   display: grid;
   grid-template-columns: 500px 350px 280px;
-  grid-template-rows: 1fr 26px;
+  grid-template-rows: 1fr minmax(26px, auto);
   column-gap: 20px;
 
   margin-bottom: 80px;
@@ -46,6 +46,7 @@
 .slider-gallery-list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   grid-column: 2 / -1;
   grid-row-start: 1;
 
@@ -81,12 +82,12 @@
   width: 100px;
   height: 100px;
 
-  background-color: var(--secondary-light-01);
+  background-color: var(--main-extra-light-04);
   border-radius: 50%;
 }
 
 .slider-gallery-item-active {
-  width: 348px;
+  width: 350px;
   height: 554px;
   opacity: 1;
 }
@@ -140,4 +141,5 @@
 .gallery-social-list {
   grid-column-start: -2;
   justify-self: end;
+  justify-content: end;
 }

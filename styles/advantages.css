@@ -35,3 +35,40 @@
 
   list-style: none;
 }
+
+.advantages-item {
+  position: relative;
+  padding-left: 64px;
+}
+
+.advantages-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  padding: 8px;
+  width: 48px;
+  height: 48px;
+
+  border: 2px solid var(--main-extra-dark);
+  border-radius: 50%;
+
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-item-production::before {
+  background-image: url("../images/icon/icecream_fill.svg");
+}
+
+.advantages-item-purchase::before {
+  background-image: url("../images/icon/cow.svg");
+}
+
+.advantages-item-natural::before {
+  background-image: url("../images/icon/leaf.svg");
+}
+
+.advantages-item-delivery::before {
+  background-image: url("../images/icon/thermometer.svg");
+}
