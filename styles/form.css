@@ -12,8 +12,9 @@
 
 .input-main {
   padding: 14px 16px;
+  width: 100%;
 
-  font-family: "Inter", "Arial", sans-serif;
+  font-family: 'Inter', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
