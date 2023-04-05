@@ -181,3 +181,105 @@
 
   transform: scale(1);
 }
+
+/* Popover Login */
+.popover-login {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+
+  display: none;
+
+  width: 420px;
+  max-width: 420px;
+  padding: 48px;
+  margin-top: 8px;
+
+  color: var(--main-extra-dark);
+
+  background-color: var(--main-extra-light);
+  border-radius: 4px;
+  box-shadow: 0 8px 16px var(--main-extra-dark-01);
+}
+
+.popover-login-close {
+  display: none;
+}
+
+.popover-login-open {
+  display: block;
+}
+
+.navigation-user-item:focus-within .popover-login {
+  display: block;
+}
+
+.popover-login-title {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.popover-login-field {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.popover-login-buttons {
+  display: flex;
+
+  margin-top: 32px;
+}
+
+.popover-login-button {
+  align-self: start;
+
+  max-width: 162px;
+
+  margin-right: 23px;
+}
+
+.popover-login-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  margin: 0;
+}
+
+.popover-login-link {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: var(--main-extra-dark);
+
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--main-extra-dark);
+
+  transition-property: color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.popover-login-link:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.popover-login-link:hover {
+  color: var(--secondary-extra-bright);
+
+  border-color: transparent;
+}
+
+.popover-login-link:focus {
+  color: var(--secondary-extra-bright);
+
+  border-color: var(--secondary-extra-bright);
+}
+
+.popover-login-link:active {
+  color: var(--main-extra-dark);
+
+  border-color: var(--main-extra-dark);
+}
