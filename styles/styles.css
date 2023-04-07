@@ -1,23 +1,23 @@
 /* Fonts */
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-400.woff2') format('woff2');
+  font-family: "Inter";
+  src: url("../fonts/Inter-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-700.woff2') format('woff2');
+  font-family: "Inter";
+  src: url("../fonts/Inter-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-900.woff2') format('woff2');
+  font-family: "Inter";
+  src: url("../fonts/Inter-900.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -68,6 +68,9 @@
   --status-error: #ea5454;
   --status-warning: #fd912e;
   --status-access: #00e484;
+
+  --tooltop-border: rgba(173, 152, 143, 0.18);
+  --tooltop-shadow: rgba(194, 194, 194, 0.2);
 }
 
 /* Global */
@@ -86,7 +89,7 @@ body {
   min-width: 1200px;
   min-height: 100%;
 
-  font-family: 'Inter', 'Arial', sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

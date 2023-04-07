@@ -2,8 +2,10 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   margin: 0;
+  height: 100%;
 }
 
 .form-group-label {
@@ -14,7 +16,7 @@
   padding: 14px 16px;
   width: 100%;
 
-  font-family: 'Inter', 'Arial', sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

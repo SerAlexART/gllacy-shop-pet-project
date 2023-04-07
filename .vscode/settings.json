@@ -20,5 +20,6 @@
   "css.lint.zeroUnits": "error",
   "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true,
-  "prettier.singleQuote": false
+  "prettier.singleQuote": false,
+  "prettier.bracketSpacing": true
 }
