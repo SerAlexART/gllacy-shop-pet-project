@@ -64,6 +64,10 @@
   margin-right: 8px;
 }
 
+.navigation-item-catalog {
+  position: relative;
+}
+
 /* .navigation-link {
   display: block;
   height: 100%;
@@ -85,14 +89,27 @@
 }
 
 .navigation-user-item {
-  display: flex;
-  align-items: center;
+  position: relative;
+
+  /* display: flex;
+  align-items: center; */
 
   margin-bottom: 16px;
 }
 
+.navigation-user-item-phone {
+  /* padding: 6px 0; */
+}
+
 .navigation-user-item:not(:last-child) {
   margin-right: 16px;
+}
+
+.navigation-user-phone {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
 }
 
 .button-user-search {
