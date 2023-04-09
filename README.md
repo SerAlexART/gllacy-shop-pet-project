@@ -1,6 +1,7 @@
 # Личный проект «Glassy Shop»
 
 - Студент: [Сергей Алексеев](https://up.htmlacademy.ru/htmlcss/35/user/1569399).
+- Готовая страница: https://seralexart.github.io/gllacy-shop-pp/.
 
 ---
 
