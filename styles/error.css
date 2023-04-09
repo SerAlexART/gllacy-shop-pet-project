@@ -1,0 +1,50 @@
+/* error */
+.error {
+  display: flex;
+
+  padding: 64px;
+
+  background-color: var(--main);
+  background-image: url("../images/background/contacts-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+
+.error-inner {
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px;
+  max-width: 400px;
+
+  background-color: var(--main);
+  border-radius: 8px;
+  box-shadow: 0 15px 40px var(--main-extra-dark-01);
+}
+
+.error-title {
+  margin: 0;
+
+  color: var(--main-extra-dark);
+}
+
+.error-title:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.error-text {
+  margin: 0;
+
+  color: var(--main-extra-dark);
+}
+
+.error-text:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.error-button {
+  align-self: flex-start;
+  margin-top: auto;
+}

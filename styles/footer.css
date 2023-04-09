@@ -64,14 +64,14 @@
 }
 
 .footer-info-link-acent::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 1px;
   left: -24px;
   width: 16px;
   height: 16px;
 
-  background-image: url('../images/icon/heart.svg');
+  background-image: url("../images/icon/heart.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -89,6 +89,8 @@
 
 /* Footer Copyright */
 .footer-copyright {
+  max-width: 200px;
+
   color: var(--main-extra-dark);
 }
 

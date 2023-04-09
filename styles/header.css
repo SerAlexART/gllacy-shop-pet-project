@@ -73,6 +73,14 @@
   height: 100%;
 } */
 
+.navigation-link-catalog-image {
+  flex-shrink: 0;
+}
+
+.navigation-link-image {
+  flex-shrink: 0;
+}
+
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
